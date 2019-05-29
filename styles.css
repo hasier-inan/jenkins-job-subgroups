@@ -1,0 +1,30 @@
+.pane-frame{
+	background: #eee !important;    
+}
+
+.projectstatus{
+	border-top: 1px solid #c3c3c3;
+}
+
+.subgroup-tab{
+	position: relative;
+    display: inline-block;
+    border: solid 1px #c3c3c3;
+    border-bottom: none;
+    text-decoration: none;
+    color: #999;
+    padding: 7px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	background: rgb(238, 238, 238) !important;
+	cursor: pointer;
+}
+
+.subgroup-tab.active{
+	background: #fbfbfb !important;
+	color: #000;	
+}
+
+.grouped-row{
+	background: #fbfbfb !important;    
+}
