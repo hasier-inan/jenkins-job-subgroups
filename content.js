@@ -11,12 +11,12 @@ var groups = {};
 document.querySelectorAll("#projectstatus tr[id^='job_']").forEach(function (row) {
     var groupTabPrefix = "tab_";
     var group = 'Other';
-    if (/\[(.*?)\]/.test(row.id)) {
-        group = /\[(.*?)\]/.exec(row.id)[1];
+    if (/\((.*?)\)/.test(row.id)) {
+        group = /\((.*?)\)/.exec(row.id)[1];
     }
     row.classList.add(groupTabPrefix + group.replace(/ /g, "_"));
     row.classList.add('grouped-row');
-    row.querySelector(".model-link").textContent = row.querySelector(".model-link").textContent.replace(/\[(.*?)\]/, "");
+    row.querySelector(".model-link").textContent = row.querySelector(".model-link").textContent.replace(/\((.*?)\)/, "");
     groups[(groupTabPrefix + group.replace(/ /g, "_"))] = group;
 });
 
